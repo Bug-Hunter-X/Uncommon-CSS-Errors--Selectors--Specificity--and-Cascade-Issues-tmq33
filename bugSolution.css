@@ -1,0 +1,33 @@
+/* bugSolution.css */
+
+/* Corrected selectors */
+.container[data-attribute="value"] {
+  color: blue;
+}
+
+/* Improved specificity using more precise selectors */
+#myElement.myClass {
+  font-size: 16px;
+}
+
+/* Avoiding !important and using a more specific selector instead */
+.highPriority {
+  color: red;
+}
+
+.container .highPriority {
+    color: green; /* This rule will now correctly override the general .highPriority rule */
+}
+
+/* Ensuring the order of your CSS rules are correct and using the correct selectors */
+.section1 {
+    background-color: #f0f0f0;
+}
+
+.section1 .element1 {
+    background-color: #ddd;
+}
+
+.section1 .element2 {
+    background-color: #eee; /* This rule will now correctly override the general section1 class */
+}
